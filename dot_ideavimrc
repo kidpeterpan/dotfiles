@@ -1,0 +1,50 @@
+""" Idea specific settings
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Editing and Reloading the Config
+""" reload Vim config :action IdeaVim.ReloadVimRc.reload
+set clipboard+=unnamed
+set clipboard+=ideaput
+set scrolloff=10
+set number
+set relativenumber
+set ignorecase
+set highlightedyank
+set showmode
+
+""" Plug-in
+""" `/` search
+""" `i` horizontal split
+""" `s` vertical split
+set NERDTree
+
+""" Key Mapping
+""" [MODE] [KEY] [ACTION][RETURN]
+""" map for all mode
+""" nnoremap for normal mode
+let mapleader=" "
+map <C-c> <Esc>
+
+""" FIND ===
+nnoremap <leader>fc :action GotoClass<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fp :action FindInPath<CR>
+
+""" MOVE ===
+nnoremap <TAB> :action NextTab<CR>
+nnoremap <s-TAB> :action PreviousTab<CR>
+nnoremap ]] :action MethodDown<CR>
+nnoremap [[ :action MethodUp<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotToDeclaration<CR>
+nnoremap gp :action GotToSuperMethod<CR>
+nnoremap gr :action GotoRelated<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+
+""" REFACTOR ===
+nnoremap <leader>rn :action RenameElement<CR>
+

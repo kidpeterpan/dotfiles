@@ -22,6 +22,7 @@ vim.keymap.set('','<C-v>','"+p',{ noremap = true, silent = true })
 -- ### Runing and Debugging
 vim.keymap.set('n','<Leader>gr',':GoRun<CR>')
 -- ### Nagigate
+vim.keymap.set('n','ga',':GoAlternate<CR>') -- jump between implementation file & test file
 vim.keymap.set('n','gr',':GoReferrers<CR>')
 -- ### Refactoring
 vim.keymap.set('n','<Leader>rn',':GoRename<CR>')

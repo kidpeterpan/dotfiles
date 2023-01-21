@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
-
+vim.keymap.set("n", "<Up>", '<NOP>')
+vim.keymap.set("n", "<Down>", '<NOP>')
+vim.keymap.set("n", "<Left>", '<NOP>')
+vim.keymap.set("n", "<Right>", '<NOP>')
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set('n','<Leader>ff',':lua require("telescope.builtin").find_files()<CR>')
 vim.keymap.set('n','<Leader>fg',':lua require("telescope.builtin").live_grep()<CR>')

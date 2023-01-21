@@ -34,7 +34,13 @@ return require('packer').startup(function(use)
 	  config = function()
 		  vim.cmd('colorscheme rose-pine')
 	  end
- })
+  })
+
+  -- Lua Line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- Mason manage external editor tooling
   use {

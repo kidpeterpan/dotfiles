@@ -1,7 +1,7 @@
 require("kidpeterpan.packer")
 require("kidpeterpan.set")
 require("kidpeterpan.remap")
-require("mason").setup({
+require("mason").setup {
     ui = {
         icons = {
             package_installed = "✓",
@@ -9,10 +9,14 @@ require("mason").setup({
             package_uninstalled = "✗"
         }
     }
-})
+}
 
 require("mason-lspconfig").setup {
 	ensure_installed = { "gopls" }
+}
+
+require('lualine').setup {
+	options = { theme = 'rose-pine' }
 }
 
 local augroup = vim.api.nvim_create_augroup

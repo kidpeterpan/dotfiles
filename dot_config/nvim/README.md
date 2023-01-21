@@ -13,5 +13,6 @@
 - `git init` on `$HOME/.config/nvim/` and then `git remote add origin https://github.com/kidpeterpan/nvim.config`
 - `git pull`
 - install [Packer.nvim](https://github.com/wbthomason/packer.nvim#quickstart)
+- install [fatih/vim-go](git clone https://github.com/fatih/vim-go.git ~/.local/share/nvim/site/pack/plugins/start/vim-go)
 - install [Golang](https://go.dev/doc/install)
 - open `nvim` and [run](run) `:PackerSync`

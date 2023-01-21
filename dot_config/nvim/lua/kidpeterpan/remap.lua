@@ -21,6 +21,11 @@ vim.keymap.set('','<C-v>','"+p',{ noremap = true, silent = true })
 -- ## Vim Go
 -- ### Runing and Debugging
 vim.keymap.set('n','<Leader>gr',':GoRun<CR>')
+vim.keymap.set('n','<Leader>gt',':GoTest<CR>')
+vim.keymap.set('n','<Leader>gd',':GoDebugStart<CR>')
+vim.keymap.set('n','<Leader>db',':GoDebugBreakpoint<CR>')
+vim.keymap.set('n','<Leader>dc',':GoDebugContinue<CR>')
+vim.keymap.set('n','<Leader>dn',':GoDebugNext<CR>')
 -- ### Nagigate
 vim.keymap.set('n','ga',':GoAlternate<CR>') -- jump between implementation file & test file
 vim.keymap.set('n','gr',':GoReferrers<CR>')

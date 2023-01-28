@@ -49,6 +49,12 @@ return require('packer').startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
+  -- Coc for better code completion
+  -- https://github.com/neoclide/coc.nvim
+  use {'neoclide/coc.nvim', branch = 'release'}
+
+  -- Treesistter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
 end)
 

@@ -9,6 +9,7 @@
 - telescope
 - treesitter
 - mason
+- coc
 - lualine
 
 ---
@@ -28,3 +29,4 @@ chezmoi update
 - install [Golang](https://go.dev/doc/install)
 - install [fatih/vim-go](https://github.com/fatih/vim-go#install)
 - open `nvim` and [run](run) `:PackerSync`
+- config coc: [doc](https://github.com/neoclide/coc.nvim)

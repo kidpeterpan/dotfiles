@@ -21,20 +21,23 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Look and Feel
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- Color rose-pine
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+--  Color rose-pine
+--   use({
+--	  'rose-pine/neovim',
+--	  as = 'rose-pine',
+--	  config = function()
+--		  vim.cmd('colorscheme rose-pine')
+--	  end
+--  })
 
   -- Lua Line
   use {
@@ -56,5 +59,8 @@ return require('packer').startup(function(use)
   -- Treesistter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
+  -- File Explorer
+  use 'nvim-tree/nvim-web-devicons'
+  use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 end)
 
